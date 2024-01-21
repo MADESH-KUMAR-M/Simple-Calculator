@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Calculator
+        </title>
+        <meta name="viewport" content="width = device-width,initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <style>
+        .symbol{
+            background-color: rgb(215, 34, 34);
+            border-radius: 50%;
+        }
+    </style>
+    <body background="R.jpeg">
+        <div id="calculator">
+            <table>
+                <tr>
+                    <td colspan="3"><div>
+                        <input type="number" id="answer">   
+                        <input type="text" id="display">
+                        </div>
+                    </td>
+                    <td><button onclick="clr()" style="background-color: #ff6d00;" class="symbol">C</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="input(7)" onkeydown="myFunction(event)">7</button></td>
+                    <td><button onclick="input(8)">8</button></td>
+                    <td><button onclick="input(9)">9</button></td>
+                    <td><button onclick="input('+')" class="symbol">+</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="input(4)">4</button></td>
+                    <td><button onclick="input(5)">5</button></td>
+                    <td><button onclick="input(6)">6</button></td>
+                    <td><button onclick="input('-')" class="symbol">-</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="input(1)">1</button></td>
+                    <td><button onclick="input(2)">2</button></td>
+                    <td><button onclick="input(3)">3</button></td>
+                    <td><button onclick="input('*')" class="symbol">*</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="input(0)">0</button></td>
+                    <td><button onclick="input('.')">.</button></td>
+                    <td><button onclick="equal()" class="symbol">=</button></td>
+                    <td><button onclick="input('/')" class="symbol">/</button></td>
+                </tr>
+        </table>
+        </div>
+        <script>
+            function input(val){
+                document.getElementById("display").value += val;
+            }
+            function clr(){
+                document.getElementById("display").value = "";
+            }
+            function equal(){
+                let x = document.getElementById("display").value;
+                document.getElementById("answer").value = eval(x);
+                
+                document.getElementById("answer").style.display = "block";
+            }
+        </script>
+    </body>
+</html>

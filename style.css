@@ -1,0 +1,74 @@
+body{
+    overflow: hidden; 
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+#calculator{
+
+/* align div at center of page */
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    position: fixed;
+    margin: auto;
+    width: fit-content;
+    height: 56.7%;
+    background-color:#96a9ae;
+    padding: 20px;
+}
+#display{
+    display: block;
+    border: 2px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: transparent;
+    background-color:#6f8389;
+
+    width: 100%;
+    padding-top: 25%;
+    margin-right: 2.5%;
+
+    caret-color: transparent;
+
+    color: white;
+    font-weight: bolder;
+    font-size: large;
+}
+#answer{
+    position: absolute;
+    width: 50%;
+    height: 40px;border: 2px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: transparent;
+    background-color:#6f8389;
+    color: red;
+    font-weight: bolder;
+    font-size: larger;
+    display: none;
+}
+button{
+    background-color: #77f326;
+    border: 0;
+    color: white;
+    font-weight: bolder;
+    font-size: medium;
+    width: 100%;
+    padding: 7%;
+    border-radius: 25%;
+    height: 100%;
+}
+td{
+    width: 20%;
+    background-color: transparent;
+    padding-right: 2.5%;
+    padding-bottom: 2.2%;
+}
+tr{
+    height: 20%;
+}
+table{
+    height: 100%;
+}

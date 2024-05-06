@@ -1,6 +1,7 @@
 # Simple-Calculator
 
 This is a simple working calculator developed using HTML, CSS, Javascript.
+[Run this program](https://madesh-kumar-m.github.io/Simple-Calculator/)
 
 For the design of the calculator youn can use my another repository [Calculator-design](https://github.com/MADESH-KUMAR-M/Calculator-design).
 
